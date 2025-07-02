@@ -1,0 +1,40 @@
+#include "board.h"
+#include "driverlib.h"
+#include "shared.h"
+
+#define ALPHA 0.1f
+#define ONE_M_ALPHA (1.0f - ALPHA)
+
+float lastY;
+
+// Task1: Single-pole IIR low-pass filtering
+__attribute__((interrupt)) void Cla1Task1(void) {
+  uint16_t raw;
+  raw = ADC_readResult(myADCA_RESULT_BASE, myADCA_SOC0);
+
+  __mdebugstop();
+
+  filterIn = 0.0356f * raw - 72.925f;
+
+  spll1.u[0] = filterIn / 15.0f;
+  SPLL_1ph_SOGI_CLA_MACRO(spll1);
+
+  // Perform one-step IIR filtering: y = α·x + (1–α)·y_prev
+  float y = ALPHA * filterIn + ONE_M_ALPHA * lastY;
+
+  // Save current output for next iteration
+  lastY = y;
+
+  // Send filtered result back to CPU
+  filterOut = y;
+
+  // Clear interrupt flag and return
+}
+
+// Init task
+__attribute__((interrupt)) void Cla1Task8(void) {
+  lastY = 0.0f;
+  SPLL_1ph_SOGI_CLA_init(GRID_FREQ, ((float32)(1.0 / ISR_FREQUENCY)), spll1);
+  SPLL_1ph_SOGI_CLA_coeff_update(((float32)(1.0 / ISR_FREQUENCY)),
+                                 (float32)(2 * PI * GRID_FREQ), spll1);
+}

@@ -1,0 +1,32 @@
+[
+   {
+      "directory" : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM",
+      "command"   : "clang++ -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00\" -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/\" -I\"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -I\"/Applications/ti/Solar_lib/float/include\" -I\"/Applications/ti/Solar_lib/CLA/include\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include\" -DDEBUG -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg/board.c"
+   },
+   {
+      "directory" : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM",
+      "command"   : "clang++ -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00\" -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/\" -I\"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -I\"/Applications/ti/Solar_lib/float/include\" -I\"/Applications/ti/Solar_lib/CLA/include\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include\" -DDEBUG -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg/c2000ware_libraries.c"
+   },
+   {
+      "directory" : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM",
+      "command"   : "clang++ -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00\" -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/\" -I\"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -I\"/Applications/ti/Solar_lib/float/include\" -I\"/Applications/ti/Solar_lib/CLA/include\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include\" -DDEBUG -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/device.c"
+   },
+   {
+      "directory" : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM",
+      "command"   : "clang++ -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00\" -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/\" -I\"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -I\"/Applications/ti/Solar_lib/float/include\" -I\"/Applications/ti/Solar_lib/CLA/include\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include\" -DDEBUG -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg\" -DF28004x=1",
+      "file"      : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/f28004x_codestartbranch.asm"
+   },
+   {
+      "directory" : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM",
+      "command"   : "clang++ -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00\" -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/\" -I\"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -I\"/Applications/ti/Solar_lib/float/include\" -I\"/Applications/ti/Solar_lib/CLA/include\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include\" -DDEBUG -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/main.c"
+   },
+   {
+      "directory" : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM",
+      "command"   : "clang++ -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00\" -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/\" -I\"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include\" -I\"/Applications/ti/Solar_lib/float/include\" -I\"/Applications/ti/Solar_lib/CLA/include\" -I\"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include\" -DDEBUG -I\"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg\" -DF28004x=1 -xc",
+      "file"      : "/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/task.cla"
+   }
+]
