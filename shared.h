@@ -3,10 +3,6 @@
 
 #include "Solar_CLA.h"
 
-#define ADC_BITS 12
-#define ADC_VREF ((float)3.3)
-#define ADC_VSTEP ((float)(ADC_VREF / ((1 << ADC_BITS) - 1)))
-
 #define GRID_FREQ 50
 #define ISR_FREQUENCY 20000
 #define PI 3.14159
