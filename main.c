@@ -136,14 +136,6 @@ __interrupt void cla1Isr1(void) {
   *spllBufPtr++ = spll1.sin;
   // Brute Force the circular buffer
   if (spllBufPtr == (spllBuf + SPLL_BUF_LEN)) spllBufPtr = spllBuf;
-
-  float duty3 = (spll1.u[0] + 1.0f) * 0.5f;  // [0,1]
-  uint16_t cmpa3 = (uint16_t)(duty3 * 1249.0f + 0.5f);
-  EPWM_setCounterCompareValue(myEPWM3_BASE, EPWM_COUNTER_COMPARE_A, cmpa3);
-
-  float duty2 = (spll1.sin + 1.0f) * 0.5f;  // [0,1]
-  uint16_t cmpa2 = (uint16_t)(duty2 * 1249.0f + 0.5f);
-  EPWM_setCounterCompareValue(myEPWM2_BASE, EPWM_COUNTER_COMPARE_A, cmpa2);
 }
 
 //

@@ -19,6 +19,14 @@ __attribute__((interrupt)) void Cla1Task1(void) {
   spll1.u[0] = filterIn / 15.0f;
   SPLL_1ph_SOGI_CLA_MACRO(spll1);
 
+  float duty3 = (spll1.u[0] + 1.0f) * 0.5f;  // [0,1]
+  uint16_t cmpa3 = (uint16_t)(duty3 * 1249.0f + 0.5f);
+  EPWM_setCounterCompareValue(myEPWM3_BASE, EPWM_COUNTER_COMPARE_A, cmpa3);
+
+  float duty2 = (spll1.sin + 1.0f) * 0.5f;  // [0,1]
+  uint16_t cmpa2 = (uint16_t)(duty2 * 1249.0f + 0.5f);
+  EPWM_setCounterCompareValue(myEPWM2_BASE, EPWM_COUNTER_COMPARE_A, cmpa2);
+
   // Perform one-step IIR filtering: y = α·x + (1–α)·y_prev
   float y = ALPHA * filterIn + ONE_M_ALPHA * lastY;
 
