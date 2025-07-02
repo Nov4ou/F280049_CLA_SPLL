@@ -113,7 +113,6 @@ void main(void) {
   EINT;
   ERTM;
 
-  DEVICE_DELAY_US(500000);
   CLA_forceTasks(CLA1_BASE, CLA_TASKFLAG_8);
 
   while (1) {

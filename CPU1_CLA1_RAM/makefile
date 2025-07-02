@@ -131,21 +131,21 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-F280049_CLA_ACAC.out 
+F280049_CLA_SPLL.out 
 
 EXE_OUTPUTS__QUOTED += \
-"F280049_CLA_ACAC.out" 
+"F280049_CLA_SPLL.out" 
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "F280049_CLA_ACAC.out"
+	@$(MAKE) --no-print-directory -Onone "F280049_CLA_SPLL.out"
 
 # Tool invocations
-F280049_CLA_ACAC.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
+F280049_CLA_SPLL.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: C2000 Linker'
-	"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=coffabi -z -m"F280049_CLA_ACAC.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"/Applications/ti/c2000/C2000Ware_5_04_00_00" -i"/Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/CPU1_CLA1_RAM/syscfg" -i"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" -i"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/lib" --priority --reread_libs --diag_wrap=off --display_error_number --xml_link_info="F280049_CLA_ACAC_linkInfo.xml" --entry_point=code_start --rom_model -o "F280049_CLA_ACAC.out" $(ORDERED_OBJS)
+	"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla2 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=coffabi -z -m"F280049_CLA_SPLL.map" --heap_size=0x200 --stack_size=0x3F8 --warn_sections -i"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/lib" -i"/Applications/ti/c2000/C2000Ware_5_04_00_00" -i"/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/CPU1_CLA1_RAM/syscfg" -i"/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" -i"/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/lib" --priority --reread_libs --diag_wrap=off --display_error_number --xml_link_info="F280049_CLA_SPLL_linkInfo.xml" --entry_point=code_start --rom_model -o "F280049_CLA_SPLL.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
