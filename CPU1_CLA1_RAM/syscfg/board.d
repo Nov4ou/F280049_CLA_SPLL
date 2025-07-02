@@ -2,7 +2,7 @@
 
 syscfg/board.obj: syscfg/board.c
 syscfg/board.obj: syscfg/board.h
-syscfg/board.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/driverlib.h
+syscfg/board.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/driverlib.h
 syscfg/board.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_memmap.h
 syscfg/board.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/adc.h
 syscfg/board.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h
@@ -97,13 +97,13 @@ syscfg/board.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/
 syscfg/board.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_spi.h
 syscfg/board.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/version.h
 syscfg/board.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/driver_inclusive_terminology_mapping.h
-syscfg/board.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/device.h
+syscfg/board.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/device.h
 
 syscfg/board.c:
 
 syscfg/board.h:
 
-/Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/driverlib.h:
+/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/driverlib.h:
 
 /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_memmap.h:
 
@@ -293,5 +293,5 @@ syscfg/board.h:
 
 /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/driver_inclusive_terminology_mapping.h:
 
-/Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/device.h:
+/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/device.h:
 

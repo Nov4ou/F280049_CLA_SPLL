@@ -1,48 +1,50 @@
 # FIXED
 
 main.obj: ../main.c
-main.obj: /Applications/ti/Solar_lib/CLA/include/Solar_CLA.h
-main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include/CLAmath.h
-main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h
+main.obj: /Applications/ti/Solar_lib/float/include/Solar_F.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/math.h
 main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_ti_config.h
 main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/linkage.h
-main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h
-main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h
-main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_defs.h
 main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_types.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h
 main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h
-main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h
-main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/ABC_DQ0_NEG_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/ABC_DQ0_POS_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/CLARKE_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/CNTL_2P2Z_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/CNTL_3P3Z_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/CNTL_PI_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/DLOG_1CH_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/DLOG_4CH_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/DQ0_ABC_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/iCLARKE_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/iPARK_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/MATH_EMAVG_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/MPPT_INCC_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/MPPT_INCC_I_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/MPPT_PNO_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/NOTCH_FLTR_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/PARK_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/PID_GRANDO_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/RAMPGEN_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/SINEANALYZER_DIFF_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/SINEANALYZER_DIFF_wPWR_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/SPLL_1ph_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/SPLL_1ph_SOGI_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/SPLL_3PH_SRF_CLA.h
-main.obj: /Applications/ti/Solar_lib/CLA/include/SPLL_3PH_DDSRF_CLA.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_limits.h
+main.obj: /Applications/ti/Solar_lib/float/include/ABC_DQ0_POS_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/ABC_DQ0_NEG_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/CLARKE_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/CNTL_2P2Z_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/CNTL_3P3Z_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/CNTL_PI_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/DLOG_1CH_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/DLOG_4CH_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/DQ0_ABC_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/iCLARKE_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/iPARK_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/MATH_EMAVG_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/MPPT_INCC_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/MPPT_INCC_I_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/MPPT_PNO_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/NOTCH_FLTR_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/PARK_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/PID_GRANDO_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/RAMPGEN_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/SINEANALYZER_DIFF_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/SINEANALYZER_DIFF_wPWR_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/SPLL_1ph_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/SPLL_1ph_SOGI_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/SPLL_3PH_DDSRF_F.h
+main.obj: /Applications/ti/Solar_lib/float/include/SPLL_3PH_SRF_F.h
 main.obj: syscfg/board.h
-main.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/driverlib.h
+main.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/driverlib.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_memmap.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/adc.h
 main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h
+main.obj: /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_adc.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_asysctl.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_types.h
@@ -124,94 +126,98 @@ main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverli
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_spi.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/version.h
 main.obj: /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/driver_inclusive_terminology_mapping.h
-main.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/device.h
+main.obj: /Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/device.h
 main.obj: syscfg/c2000ware_libraries.h
 
 ../main.c:
 
-/Applications/ti/Solar_lib/CLA/include/Solar_CLA.h:
+/Applications/ti/Solar_lib/float/include/Solar_F.h:
 
-/Applications/ti/c2000/C2000Ware_5_04_00_00/libraries/math/CLAmath/c28/include/CLAmath.h:
-
-/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h:
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/math.h:
 
 /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_ti_config.h:
 
 /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/linkage.h:
 
-/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h:
-
-/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h:
-
-/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h:
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_defs.h:
 
 /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_types.h:
 
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/cdefs.h:
+
 /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_types.h:
 
-/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h:
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_limits.h:
 
-/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h:
+/Applications/ti/Solar_lib/float/include/ABC_DQ0_POS_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/ABC_DQ0_NEG_CLA.h:
+/Applications/ti/Solar_lib/float/include/ABC_DQ0_NEG_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/ABC_DQ0_POS_CLA.h:
+/Applications/ti/Solar_lib/float/include/CLARKE_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/CLARKE_CLA.h:
+/Applications/ti/Solar_lib/float/include/CNTL_2P2Z_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/CNTL_2P2Z_CLA.h:
+/Applications/ti/Solar_lib/float/include/CNTL_3P3Z_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/CNTL_3P3Z_CLA.h:
+/Applications/ti/Solar_lib/float/include/CNTL_PI_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/CNTL_PI_CLA.h:
+/Applications/ti/Solar_lib/float/include/DLOG_1CH_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/DLOG_1CH_CLA.h:
+/Applications/ti/Solar_lib/float/include/DLOG_4CH_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/DLOG_4CH_CLA.h:
+/Applications/ti/Solar_lib/float/include/DQ0_ABC_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/DQ0_ABC_CLA.h:
+/Applications/ti/Solar_lib/float/include/iCLARKE_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/iCLARKE_CLA.h:
+/Applications/ti/Solar_lib/float/include/iPARK_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/iPARK_CLA.h:
+/Applications/ti/Solar_lib/float/include/MATH_EMAVG_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/MATH_EMAVG_CLA.h:
+/Applications/ti/Solar_lib/float/include/MPPT_INCC_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/MPPT_INCC_CLA.h:
+/Applications/ti/Solar_lib/float/include/MPPT_INCC_I_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/MPPT_INCC_I_CLA.h:
+/Applications/ti/Solar_lib/float/include/MPPT_PNO_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/MPPT_PNO_CLA.h:
+/Applications/ti/Solar_lib/float/include/NOTCH_FLTR_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/NOTCH_FLTR_CLA.h:
+/Applications/ti/Solar_lib/float/include/PARK_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/PARK_CLA.h:
+/Applications/ti/Solar_lib/float/include/PID_GRANDO_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/PID_GRANDO_CLA.h:
+/Applications/ti/Solar_lib/float/include/RAMPGEN_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/RAMPGEN_CLA.h:
+/Applications/ti/Solar_lib/float/include/SINEANALYZER_DIFF_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/SINEANALYZER_DIFF_CLA.h:
+/Applications/ti/Solar_lib/float/include/SINEANALYZER_DIFF_wPWR_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/SINEANALYZER_DIFF_wPWR_CLA.h:
+/Applications/ti/Solar_lib/float/include/SPLL_1ph_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/SPLL_1ph_CLA.h:
+/Applications/ti/Solar_lib/float/include/SPLL_1ph_SOGI_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/SPLL_1ph_SOGI_CLA.h:
+/Applications/ti/Solar_lib/float/include/SPLL_3PH_DDSRF_F.h:
 
-/Applications/ti/Solar_lib/CLA/include/SPLL_3PH_SRF_CLA.h:
-
-/Applications/ti/Solar_lib/CLA/include/SPLL_3PH_DDSRF_CLA.h:
+/Applications/ti/Solar_lib/float/include/SPLL_3PH_SRF_F.h:
 
 syscfg/board.h:
 
-/Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/driverlib.h:
+/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/driverlib.h:
 
 /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_memmap.h:
 
 /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/adc.h:
 
 /Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdbool.h:
+
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/stdint.h:
+
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/_stdint40.h:
+
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/stdint.h:
+
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/machine/_stdint.h:
+
+/Applications/ti/ccs2011/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include/sys/_stdint.h:
 
 /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/inc/hw_adc.h:
 
@@ -375,7 +381,7 @@ syscfg/board.h:
 
 /Applications/ti/c2000/C2000Ware_5_04_00_00/driverlib/f28004x/driverlib/driver_inclusive_terminology_mapping.h:
 
-/Users/nov4ou/workspace_ccstheia/F280049_CLA_ACAC/device/device.h:
+/Users/nov4ou/workspace_ccstheia/F280049_CLA_SPLL/device/device.h:
 
 syscfg/c2000ware_libraries.h:
 

@@ -22,6 +22,15 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "F280049_CLA_SPLL",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "F280049_CLA_SPLL",
+                "resourceId": "/F280049_CLA_SPLL"
+            }
         }
     ]
 }

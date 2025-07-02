@@ -16,9 +16,6 @@ __attribute__((interrupt)) void Cla1Task1(void) {
 
   filterIn = 0.0356f * raw - 72.925f;
 
-  spll1.u[0] = filterIn / 15.0f;
-  SPLL_1ph_SOGI_CLA_MACRO(spll1);
-
   // Perform one-step IIR filtering: y = α·x + (1–α)·y_prev
   float y = ALPHA * filterIn + ONE_M_ALPHA * lastY;
 
@@ -34,7 +31,4 @@ __attribute__((interrupt)) void Cla1Task1(void) {
 // Init task
 __attribute__((interrupt)) void Cla1Task8(void) {
   lastY = 0.0f;
-  SPLL_1ph_SOGI_CLA_init(GRID_FREQ, ((float32)(1.0 / ISR_FREQUENCY)), spll1);
-  SPLL_1ph_SOGI_CLA_coeff_update(((float32)(1.0 / ISR_FREQUENCY)),
-                                 (float32)(2 * PI * GRID_FREQ), spll1);
 }

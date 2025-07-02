@@ -47,11 +47,15 @@
 //
 // Included Files
 //
-#include "Solar_CLA.h"
+#include "Solar_F.h"
 #include "board.h"
 #include "c2000ware_libraries.h"
 #include "device.h"
 #include "driverlib.h"
+
+#define GRID_FREQ 50
+#define ISR_FREQUENCY 20000
+#define PI 3.14159
 
 // NOTE: Graph buffers
 #define ADC_BUF_LEN 500
@@ -67,8 +71,7 @@ float filterOut;
 #pragma DATA_SECTION(filterIn, "cla_shared");
 float filterIn;
 
-#pragma DATA_SECTION(spll1, "cla_shared");
-SPLL_1ph_SOGI_CLA spll1;
+SPLL_1ph_SOGI_F spll1;
 
 __interrupt void INT_myCPUTIMER0_ISR(void);
 
@@ -113,27 +116,18 @@ void main(void) {
   EINT;
   ERTM;
 
-  DEVICE_DELAY_US(500000);
-  CLA_forceTasks(CLA1_BASE, CLA_TASKFLAG_8);
+  SPLL_1ph_SOGI_F_init(GRID_FREQ, ((float)(1.0 / ISR_FREQUENCY)), &spll1);
+  SPLL_1ph_SOGI_F_coeff_update(((float)(1.0 / ISR_FREQUENCY)),
+                               (float)(2 * PI * GRID_FREQ), &spll1);
 
   while (1) {
   }
 }
 
-__interrupt void INT_myCPUTIMER0_ISR(void) {  
-  Interrupt_clearACKGroup(INT_myCPUTIMER0_INTERRUPT_ACK_GROUP);
-}
-
-__interrupt void cla1Isr1(void) {
-  // Clear interrupt flags.
-  Interrupt_clearACKGroup(INT_myCLA01_INTERRUPT_ACK_GROUP);
-  ADC_clearInterruptStatus(myADCA_BASE, ADC_INT_NUMBER1);
-
-  *AdcBufPtr++ = filterOut;
-  // Brute Force the circular buffer
-  if (AdcBufPtr == (AdcBuf + ADC_BUF_LEN)) AdcBufPtr = AdcBuf;
-
+__interrupt void INT_myCPUTIMER0_ISR(void) {
   GPIO_togglePin(ZC_OUOT);
+  spll1.u[0] = filterIn / 15.0f;
+  SPLL_1ph_SOGI_F_MACRO(spll1);
   *spllBufPtr++ = spll1.sin;
   // Brute Force the circular buffer
   if (spllBufPtr == (spllBuf + SPLL_BUF_LEN)) spllBufPtr = spllBuf;
@@ -145,6 +139,18 @@ __interrupt void cla1Isr1(void) {
   float duty2 = (spll1.sin + 1.0f) * 0.5f;  // [0,1]
   uint16_t cmpa2 = (uint16_t)(duty2 * 1249.0f + 0.5f);
   EPWM_setCounterCompareValue(myEPWM2_BASE, EPWM_COUNTER_COMPARE_A, cmpa2);
+
+  Interrupt_clearACKGroup(INT_myCPUTIMER0_INTERRUPT_ACK_GROUP);
+}
+
+__interrupt void cla1Isr1(void) {
+  // Clear interrupt flags.
+  Interrupt_clearACKGroup(INT_myCLA01_INTERRUPT_ACK_GROUP);
+  ADC_clearInterruptStatus(myADCA_BASE, ADC_INT_NUMBER1);
+
+  *AdcBufPtr++ = filterOut;
+  // Brute Force the circular buffer
+  if (AdcBufPtr == (AdcBuf + ADC_BUF_LEN)) AdcBufPtr = AdcBuf;
 }
 
 //
